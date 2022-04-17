@@ -7,8 +7,10 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Hello, world!</title>
+    <script src="https://kit.fontawesome.com/f9265fe1bd.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
     <!-- primera barra header -->
@@ -118,45 +120,327 @@
         </p>
       </div>
     
-      <section class="container-fluid">
-        <!-- cart foto -->
-        <article class="foto col-3">
-        <div class="card" style="width: 18rem;">
-          <img src="img/erica-dominguez-1.png" class="card-img-top" alt="">
-          <div class="card-body bg-dark text-white">
-            <p class="card-text">Erika Domínguez</p>
+      <!-- aqui empieza el bloque de la imgagen y datos -->
+        <div class="d-flex flex-row ms-5 align-items-top">
+
+          <div class="card" style="width: 18rem;">
+            <img src="img/erica-dominguez-1.png" class="card-img-top" alt="">
+            <div class="card-body bg-dark text-white">
+              <p class="card-text">Erika Domínguez</p>
+            </div>
           </div>
+
+          <div class=" col-7 d-flex flex-column offset-2">
+              <div class="datos width-100 d-flex bg-rgb(220, 220, 245) text-warning p-5 rounded-3">
+                  <div class="col-8">
+                      <ul class="list-unstyled ms-3">
+                          <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mailbox text-dark" viewBox="0 0 16 16">
+                              <path d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"/>
+                              <path d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"/>
+                            </svg>
+                              <small class="ms-2">ericadominguezbarrientos@gmail.com</small>
+                          </li>
+                          <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-forward-fill text-dark" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zm10.761.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708z"/>
+                            </svg>                           
+                              <small class="ms-2">611229933</small>
+                          </li>
+                          <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-workspace text-dark" viewBox="0 0 16 16">
+                              <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H4Zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                              <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2H2Z"/>
+                            </svg>
+                              <small class="ms-2">CodeSpace</small>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-4">
+                      <ul class="list-unstyled ms-3">
+                          <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tools text-dark" viewBox="0 0 16 16">
+                              <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+                            </svg>
+                              <small class="ms-2">In process</small>
+                          </li>
+                          <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github text-dark" viewBox="0 0 16 16">
+                              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                              <small class="ms-2">Erika016</small>
+                          </li>
+                          <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter text-dark" viewBox="0 0 16 16">
+                              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+                              <small class="ms-2">@Erikamlg</small>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <!-- icono cohete -->
+              <div class="d-flex flex-row mt-4">
+                  <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle py-4 px-4">
+                      <i class="fa-solid fa-rocket fs-1"></i>
+                  </div>
+                  <div class="col-8 mt-3 ms-4">
+                      <p class="">
+                          <h3 class="fw-bold">Hard Skills</h3>
+                      </p>
+                  </div>
+              </div>
+              <!-- barras de carga -->
+              <div class="d-flex flex-column mt-4">
+                  <div class="">
+                      <div class="progress">
+                          <div class="progress-bar  progress-bar-striped bg-warning text-dark role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">HTML-5 AVANZADO</div>
+                      </div>
+                  </div>
+                  <div class=>
+                      <p class="fs-4 fw-bold mt-3">
+                          
+                      </p>
+                      <div class="progress">
+                          <div class="progress-bar progress-bar-striped bg-warning text-dark" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">CSS AVANZADO</div>
+                      </div>
+                  </div>
+                  <div class=>
+                      <p class="fs-4 fw-bold mt-3">
+                  
+                      </p>
+                      <div class="progress">
+                          <div class="progress-bar progress-bar-striped bg-warning text-dark" role="progressbar" style="width: 30%" >javaScript DOM</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- aqui empieza el icono y ultimo bloque antes del footer -->
+      <div class="d-flex flex-row mt-5 ms-4">
+        <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle py-4 px-4">
+            <i class="fa-regular fa-lightbulb fs-1"></i>
         </div>
+        <div class=" mt-2 ms-4">
+            <p class="">
+                <h3 class="fw-bold">Soft Skills</h3>
+            </p>
+        </div>
+    </div>
+    <div class="d-flex flex-row">
+        <div class="list-group col-4 mt-4 ms-4">
+            <label class="list-group-item d-flex align-items-center bg-dark text-white">
+                <p class="mt-3">Creatividad</p>
+            </label>
+            <label class="list-group-item d-flex align-items-center">
+                <p class="mt-3">Persuasión</p>
+            </label>
+            <label class="list-group-item d-flex align-items-center">
+                <p class="mt-3">Colaboración</p>
+            </label>
+            <label class="list-group-item d-flex align-items-center">
+                <p class="mt-3">adaptabilidad</p>
+            </label>
+            <label class="list-group-item d-flex align-items-center">
+                <p class="mt-3">Inteligencia emocional</p>
+            </label>
+        </div>
+        <!--text and quote-->
+        <div class="mt-4 ms-3">
+            <p class="mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, magnam explicabo ipsam eaque ullam harum impedit cupiditate possimus accusamus, voluptatibus eius! Quos similique quam dolore dolores, molestias tempore facere quo?
+            <div class="py-3 me-4 border-top border-bottom border-start-0 border-end-0 border border-3 border border-light">
+               
+                <p class=" fw-bold fst-italic">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, enim nobis eligendi rem iusto culpa minima dolores voluptate eos. Neque facilis praesentium perferendis harum aliquam. Praesentium assumenda recusandae nulla est.
+                <p class="fst-italic text-end text-warning">
+                    Albert Einstein
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--Career profiles, experiences-->
+    <div class="d-flex flex-row justify-content-between">
+        <div class="d-flex flex-column mt-5 ms-4 col-3">
+            <div class="d-flex flex-row">
+                <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle py-3 px-3">
+                    <i class="fa-solid fa-user fs-3"></i>
+                </div>
+                <div class="ms-4">
+                    <p class="">
+                        <h3 class="fs-3 fw-bold">Career Profile</h3>
+                    </p>
+                </div>
+            </div>
+            <div class=" mt-4">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laborum voluptatibus culpa suscipit natus ducimus, unde dolorum numquam quasi error necessitatibus atque sunt doloremque facere reprehenderit dignissimos placeat expedita optio?
+                  <br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem expedita voluptatibus earum accusantium. A deleniti quos delectus obcaecati, ipsa tempora sit inventore rem officiis temporibus animi eligendi, culpa, necessitatibus officia?
+                </p>
+            </div>
+        </div>
+        <div class="d-flex flex-column mt-5 col-3">
+            <div class="d-flex flex-row">
+                <div class="d-flex justify-content-center align-items-center bg-warning rounded-circle py-3 px-3">
+                    <i class="fa-solid fa-briefcase fs-3"></i>
+                </div>
+                <div class="ms-4">
+                    <p class="">
+                        <h3 class="fs-3 fw-bold">Experiences</h3>
+                    </p>
+                </div>
+            </div>
+            <div class="mt-4">
+                <h5 class="fs-4">Moza de Almacén</h4>
+                <p>
+                    Perdumerias PRIMOR
+                    <br>
+                    <span class="text-warning">
+                        2008-Actualmente
+                    </span>
+                    <br>
+                </p>
+                <p class="text-black-50">
+                    Devolución de mercancías no apta para la venta a los proveedores, reclamación de incidencias en pedidos, retirada de mercancía obsoleta de los puntos de venta.
+                </p>
+            </div>
+        </div>
+        <div class="d-flex flex-column mt-5 col-3">
+            <div class=" mt-5 pt-4">
+                <h5 class="fs-4">Web Developer</h4>
+                <p>
+                    CODE SPACE
+                    <br>
+                    <span class="text-warning">
+                        2022 -
+                    </span>
+                    <br>
+                </p>
+                <p class="text-black-50">
+                    En proceso de formación Full Stack. Máxima motivación y esfuerzo.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--Login & Faq-->
+    <div class="mx-auto col-11 row justify-content-center mt-5">
+        <!--login-->
+        <div class="login col-4 d-flex flex-column border border border-1">
+            <form action=""></form>
+            <div class="col-12 justify-content-around row g-3">
+                <h5 class="fs-2 p-3 mt-4 text-center">Say Hello!</h5>
+                <div class="mt-3 col-11">
+                    <label for="username" class="form-label">Your Name</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text bg-dark">
+                            <i class="fa-solid fa-user text-warning"></i>
+                        </span>
+                        <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                        <div class="invalid-feedback">
+                            Your username is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11 mt-3">
+                    <label for="username" class="form-label">Email</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text bg-dark">
+                            <i class="fa-solid fa-envelope text-warning"></i>
+                        </span>
+                        <input type="email" class="form-control" id="email" placeholder="Email" required="">
+                    </div>
+                    <div id="emailHelp" class="form-text text-secondary">We'll never share your email with anyone else.
+                    </div>
+                </div>
+                <div class="mt-3 col-11">
+                    <label for="username" class="form-label">Needed services</label>
+                    <div class="input-group has-validation">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Choose Services</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mt-3 col-11">
+                    <label for="username" class="form-label">Budget</label>
+                    <div class="input-group has-validation">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select budget</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mt-3 col-11">
+                    <label for="username" class="form-label">Message</label>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Your message here..." id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Your message here...</label>
+                    </div>
+                </div>
+                <div class="mt-3 col-11">
+                    <button type="button" class="btn btn-warning col-12 fs-4">Submit<span>
+                            <i class="fa-solid fa-paper-plane ms-2"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--Acordion-->
+        <div class="login ms-5 col-3 d-flex flex-column border border border-1">
+            <h5 class="fs-2 p-3 mt-2 text-center">Frequently Asked Questions</h5>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button text-light p-4 fs-4 bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Do i need certification?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong>
+                            It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed text-light p-4 fs-4 bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How long could be my formation?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong>
+                            It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed text-light p-4 fs-4 bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Where do I start
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit reiciendis alias neque illum cupiditate voluptatibus dolorum, commodi magni in iusto beatae unde. Nobis ipsa officiis debitis, nesciunt sint a voluptates.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-      </article>
-      <span class="">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-plus" viewBox="0 0 16 16">
-          <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855a.75.75 0 0 0-.124 1.329l4.995 3.178 1.531 2.406a.5.5 0 0 0 .844-.536L6.637 10.07l7.494-7.494-1.895 4.738a.5.5 0 1 0 .928.372l2.8-7Zm-2.54 1.183L5.93 9.363 1.591 6.602l11.833-4.733Z"/>
-          <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5Z"/>
-        </svg>
-        <p>Hard Skills</p>
-      </span>
-
-     <article class="bar col-6">
-               <!-- barra cargando -->
-               <div class="progress justify-content-lg-end mx-2 my-4">
-                <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <div class="progress justify-content-lg-end mx-2 my-4">
-                <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <div class="progress justify-content-lg-end mx-2 my-4">
-                <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-     </article>
-      </section>
+      <!-- aqui termina el bloque antes del footer -->
 
     <!-- foother -->
     <div class="container">
-      <footer class="py-3 my-4">
+      <footer class="py-3 my-4 bg-dark">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
@@ -164,6 +448,7 @@
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
         </ul>
+        <p class="text-center text-warning">Erika Dominguez</p>
         <p class="text-center text-muted">© 2021 Company, Inc</p>
       </footer>
     </div>
